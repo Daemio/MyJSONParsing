@@ -19,11 +19,67 @@
         android:gravity="center"
         android:textColor="@android:color/holo_blue_dark"/>
 
+    <LinearLayout
+        android:id="@+id/topLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvCities"
+        >
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Name"
+            android:textColor="@android:color/holo_blue_dark"
+            style="@style/TableTv"
+            />
+
+        <TextView
+            android:id="@+id/tvLatitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            style="@style/TableTv"
+            android:text="Latitude" />
+
+        <TextView
+            android:id="@+id/tvLongitude"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TableTv"
+            android:textColor="@android:color/holo_blue_dark"
+            android:text="Longitude" />
+
+        <TextView
+            android:id="@+id/tvAppVersion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            style="@style/TableTv"
+            android:text="Version" />
+
+        <TextView
+            android:id="@+id/tvEconom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@android:color/holo_blue_dark"
+            style="@style/TableTv"
+            android:text="Econom" />
+
+    </LinearLayout>
+
     <ListView
         android:id="@+id/lvMain"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/tvCities"
-        android:layout_marginTop="15dp"></ListView>
+        android:layout_below="@+id/topLabel"
+        ></ListView>
 
 </RelativeLayout>

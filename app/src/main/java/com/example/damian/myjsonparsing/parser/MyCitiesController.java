@@ -2,7 +2,7 @@ package com.example.damian.myjsonparsing.parser;
 
 import android.util.Log;
 
-import com.example.damian.myjsonparsing.model.Countries;
+import com.example.damian.myjsonparsing.model.Cities;
 import com.example.damian.myjsonparsing.model.UserData;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -14,7 +14,6 @@ import java.util.List;
  * Created by Admin on 19.10.2015.
  */
 public class MyCitiesController {
-
     private static <T> T getModel(String value, Class<T> tClass) {
         try {
             return new ObjectMapper().readValue(value, tClass);
@@ -25,8 +24,8 @@ public class MyCitiesController {
     }
 
     public static List<UserData> getAllCities(String json) {
-        Countries data;
-        data = getModel(json, Countries.class);
+        Cities data;
+        data = getModel(json, Cities.class);
         return Arrays.asList(data.getCities());
     }
 }

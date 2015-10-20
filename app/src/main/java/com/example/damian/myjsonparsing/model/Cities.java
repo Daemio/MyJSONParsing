@@ -5,7 +5,7 @@ import com.example.damian.myjsonparsing.model.UserData;
 /**
  * Created by Admin on 19.10.2015.
  */
-public class Countries {
+public class Cities {
     private UserData[] cities;
 
     public UserData[] getCities() {
