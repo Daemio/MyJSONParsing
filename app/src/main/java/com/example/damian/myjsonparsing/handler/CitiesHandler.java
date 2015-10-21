@@ -2,6 +2,8 @@ package com.example.damian.myjsonparsing.handler;
 
 import android.os.AsyncTask;
 
+import com.example.damian.myjsonparsing.database.DatabaseHelper;
+import com.example.damian.myjsonparsing.database.HelperFactory;
 import com.example.damian.myjsonparsing.event.ICallback;
 import com.example.damian.myjsonparsing.model.Cities;
 import com.example.damian.myjsonparsing.remote.service.CitiesService;
@@ -34,6 +36,7 @@ public class CitiesHandler extends AsyncTask<Void,Void, Cities>{
         try {
             cities = service.run().getCities();
         }catch (RetrofitError error){
+           // cities = HelperFactory.getHelper().getUserDataDAO().getAllCities();
             if (callback!=null){
                 callback.onError(error.toString());
             }
