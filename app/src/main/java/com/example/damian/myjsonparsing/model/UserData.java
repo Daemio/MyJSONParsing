@@ -32,17 +32,17 @@ public class UserData {
     @DatabaseField(dataType = DataType.STRING)
     String docUrl;
     @JsonProperty("city_latitude")
-    @DatabaseField(dataType = DataType.DOUBLE_OBJ)
-    Double latitude;
+    @DatabaseField(dataType = DataType.DOUBLE)
+    double latitude;
     @JsonProperty("city_longitude")
-    @DatabaseField(dataType = DataType.DOUBLE_OBJ)
-    Double longitude;
+    @DatabaseField(dataType = DataType.DOUBLE)
+    double longitude;
     @JsonProperty("city_spn_latitude")
-    @DatabaseField(dataType = DataType.DOUBLE_OBJ)
-    Double spnLatitude;
+    @DatabaseField(dataType = DataType.DOUBLE)
+    double spnLatitude;
     @JsonProperty("city_spn_longitude")
-    @DatabaseField(dataType = DataType.DOUBLE_OBJ)
-    Double spnLongitude;
+    @DatabaseField(dataType = DataType.DOUBLE)
+    double spnLongitude;
     @JsonProperty("last_app_android_version")
     @DatabaseField(dataType = DataType.STRING)
     String lastAppVersion;

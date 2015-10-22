@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_full);
         lvMain = (ListView) findViewById(R.id.lvMain);
 
         //test array adapter
@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         */
 
         //data = MyCitiesController.getAllCities(Utils.ReadFromfile("cities.json",getApplicationContext()));
-        adapter = new MyArrayAdapter(this, R.layout.item);
+        adapter = new MyArrayAdapter(this, R.layout.item_full);
         lvMain.setAdapter(adapter);
 
 
