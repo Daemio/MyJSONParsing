@@ -8,7 +8,7 @@
     <TextView
         android:id="@+id/tvId"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="0.5"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/tvName"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:text="Name"
         android:textColor="@android:color/black"
@@ -27,7 +27,7 @@
     <TextView
         android:id="@+id/tvApiUrl"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -36,7 +36,7 @@
     <TextView
         android:id="@+id/tvDomain"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -45,7 +45,7 @@
     <TextView
         android:id="@+id/tvMobileServer"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -54,7 +54,7 @@
     <TextView
         android:id="@+id/tvDocUrl"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -63,7 +63,7 @@
     <TextView
         android:id="@+id/tvLatitude"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -72,7 +72,7 @@
     <TextView
         android:id="@+id/tvLongitude"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         style="@style/TableTv"
         android:textColor="@android:color/black"
@@ -81,7 +81,7 @@
     <TextView
         android:id="@+id/tvSpnLatitude"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -90,7 +90,7 @@
     <TextView
         android:id="@+id/tvSpnLongitude"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         style="@style/TableTv"
         android:textColor="@android:color/black"
@@ -99,7 +99,7 @@
     <TextView
         android:id="@+id/tvAppVersion"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -108,7 +108,7 @@
     <TextView
         android:id="@+id/tvDriverApkLink"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -117,7 +117,7 @@
     <TextView
         android:id="@+id/tvPayMethods"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -126,7 +126,7 @@
     <TextView
         android:id="@+id/tvTransfers"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         style="@style/TableTv"
         android:textColor="@android:color/black"
@@ -135,7 +135,7 @@
     <TextView
         android:id="@+id/tvEconom"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -143,7 +143,7 @@
     <TextView
         android:id="@+id/tvEconomTime"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"
@@ -151,7 +151,7 @@
     <TextView
         android:id="@+id/tvRegPromocode"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_weight="1"
         android:textColor="@android:color/black"
         style="@style/TableTv"

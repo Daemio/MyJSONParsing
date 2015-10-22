@@ -2,16 +2,21 @@ package com.example.damian.myjsonparsing.view;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ListView;
+import android.widget.ProgressBar;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
 
 import com.example.damian.myjsonparsing.R;
 import com.example.damian.myjsonparsing.RemoteManager;
+import com.example.damian.myjsonparsing.database.DatabaseGateway;
 import com.example.damian.myjsonparsing.event.ICallback;
 import com.example.damian.myjsonparsing.model.Cities;
 import com.example.damian.myjsonparsing.model.UserData;
 import com.example.damian.myjsonparsing.view.adapter.MyArrayAdapter;
 
+import java.sql.SQLException;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
@@ -19,12 +24,14 @@ public class MainActivity extends AppCompatActivity {
     MyArrayAdapter adapter;
     ListView lvMain;
     String json; //our json String
+    RelativeLayout progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_full);
         lvMain = (ListView) findViewById(R.id.lvMain);
+        progressBar = (RelativeLayout) findViewById(R.id.loadingPanel);
 
         //test array adapter
         /*
@@ -45,23 +52,25 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onStart() {
                 Toast.makeText(MainActivity.this, "onStart", Toast.LENGTH_LONG).show();
+                progressBar.setVisibility(View.VISIBLE);
             }
 
             @Override
-            public void onSuccess(Cities cities) {
+            public void onSuccess(List<UserData> cities) {
                 adapter.clear();
-                adapter.addAll(cities.getCities());
+                adapter.addAll(cities);
                 Toast.makeText(MainActivity.this, "onSuccess", Toast.LENGTH_LONG).show();
             }
 
             @Override
             public void onError(String cause) {
-                Toast.makeText(MainActivity.this, cause, Toast.LENGTH_LONG).show();
+
             }
 
             @Override
             public void onFinish() {
                 Toast.makeText(MainActivity.this, "onFinish", Toast.LENGTH_LONG).show();
+                progressBar.setVisibility(View.GONE);
             }
         });
     }

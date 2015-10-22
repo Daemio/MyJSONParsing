@@ -26,6 +26,6 @@ public class MyCitiesController {
     public static List<UserData> getAllCities(String json) {
         Cities data;
         data = getModel(json, Cities.class);
-        return Arrays.asList(data.getCities());
+        return data.getCities();
     }
 }
